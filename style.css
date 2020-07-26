@@ -1,0 +1,69 @@
+/* box-sizing */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+#headingImg {
+    width: 48px; 
+    height: 56px; 
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#inputBox:focus {  
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(128, 128, 128, 0.5);
+    border-radius: 2px;
+}
+
+#delAllBtn {
+    margin-left: 10px;
+}
+
+.spanFa {
+    margin-left: 50px;
+}
+
+.fa-pencil {
+    color: blue;
+    font-size: 20px !important;
+}
+
+.fa-trash {
+    margin-left: 20px;
+    color: orangered;
+    font-size: 20px !important;
+}
+
+.fa-pencil:hover, .fa-trash:hover {
+    color: black
+}
+
+#listSection {
+    display: none;
+}
+@font-face {
+    font-family: "Segoe";
+    src: url("fonts/segoepr.ttf");
+}
+.list {
+    overflow-wrap: break-word !important;
+    font-family: 'Segoe', 'sans-serif';
+    font-size: 18px;
+}
+
+.list:hover {
+    background-color: silver;
+}
+
+ul li:nth-child(even) {
+    background: lightcyan;
+  }
+
+ul li:nth-child(odd) {
+    background-color: cornsilk ;
+}

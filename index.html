@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container-fluid pt-3'>
+        <div class='row d-flex justify-content-center'>
+
+            <div class="col col-xs-12 col-sm-10 col-md-8 col-lg-6 m-2 border border-dark shadow">
+
+                <div class='row d-flex justify-content-center mt-3'>
+                    <div class="col col-lg-12 d-flex justify-content-center">
+                        <img id='headingImg' src="images/list2.png" alt="list"><h1 class=""> To-Do List</h1>
+                    </div>
+                </div>
+        
+                <div class='row d-flex justify-content-center mt-4'>
+                    <div class="col  col-lg-12 d-flex justify-content-center">
+                        <form><input type="text" id="inputBox" maxlength="200" size="30" placeholder="Type here...">
+                        </form></div>
+                </div>
+        
+                <div class='row d-flex justify-content-center mt-3 '>
+                    <div class="col col-lg-12 pb-4 border-bottom d-flex  justify-content-center">
+                        <button id="addBtn" type="button" class="btn btn-success inputBtns" onclick="addToList()">ADD TO LIST</button>
+                        <button id="delAllBtn" disabled type="button" class="btn btn-danger inputBtns" onclick="delAll()">DELETE ALL</button>
+                    </div>
+                </div>
+        
+                <div class='row d-flex justify-content-center pt-4 mb-4 ul-container'>
+                    <div class="col col-lg-12 d-flex justify-content-center">
+                        <ul id='listSection' class='list-group list-group-flush'>
+        
+                        </ul>
+                    </div>
+                </div>
+        
+
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- <i class="fa fa-pencil editBtn" aria-hidden="true"></i>
+<i class="fa fa-trash delBtn" aria-hidden="true"></i> -->
