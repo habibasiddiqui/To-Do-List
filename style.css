@@ -28,7 +28,13 @@ html {
     margin-left: 50px;
 }
 
+.fa-check-square {
+    color: green;
+    font-size: 20px !important;
+}
+
 .fa-pencil {
+    margin-left: 20px;
     color: blue;
     font-size: 20px !important;
 }
@@ -39,7 +45,7 @@ html {
     font-size: 20px !important;
 }
 
-.fa-pencil:hover, .fa-trash:hover {
+.fa-pencil:hover, .fa-trash:hover, .fa-check-square:hover {
     color: black
 }
 
@@ -60,10 +66,10 @@ html {
     background-color: silver;
 }
 
-ul li:nth-child(even) {
+ul li:nth-child(odd) {
     background: lightcyan;
   }
 
-ul li:nth-child(odd) {
+ul li:nth-child(even) {
     background-color: cornsilk ;
 }
